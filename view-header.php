@@ -20,16 +20,16 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="post.php">Post</a>
+          <a class="nav-link" href="events.php">Events</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="post-results.php">Post Result</a>
+          <a class="nav-link" href="attendees.php">Attendees</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="get.php">Get</a>
+          <a class="nav-link" href="events-with-attendees.php">Events with Attendees</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="get-results.php">Get Result</a>
+          <a class="nav-link" href="rsvps.php">RSVPS</a>
         </li>
       </ul>
     </div>
