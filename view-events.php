@@ -14,10 +14,10 @@
 while ($event = $events -> fetch_assoc()) {
 ?>
   <tr> 
-     <td><?php echo $event['event_id']; ?></td>
-     <td><?php echo $event['event_name']; ?></td>
-     <td><?php echo $event['event_date']; ?></td>
-     <td><?php echo $event['event_location']; ?></td>
+     <td><?php echo $event['Event_ID']; ?></td>
+     <td><?php echo $event['Event_Name']; ?></td>
+     <td><?php echo $event['Event_Date']; ?></td>
+     <td><?php echo $event['Event_Location']; ?></td>
   </tr>
 <?php      
 }
