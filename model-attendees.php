@@ -1,5 +1,5 @@
 <?php
-function selectEvents() {
+function selectAttendees() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT * FROM `Attendee`");
