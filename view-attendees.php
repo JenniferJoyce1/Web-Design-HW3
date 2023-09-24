@@ -11,7 +11,7 @@
     </thead>
     <tbody>
 <?php
-while ($event = $attendees -> fetch_assoc()) {
+while ($attendee = $attendees -> fetch_assoc()) {
 ?>
   <tr> 
      <td><?php echo $attendee['Attendee_ID']; ?></td>
