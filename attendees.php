@@ -4,7 +4,7 @@ require_once("model-attendees.php");
 
 $pageTitle = "Attendees";
 include "view-header.php";
-$events = selectAttendees();
+$Attendee = selectAttendees();
 include "view-attendees.php";
 include "view-footer.php";
 ?>
