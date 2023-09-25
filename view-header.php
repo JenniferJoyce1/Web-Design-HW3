@@ -26,9 +26,6 @@
           <a class="nav-link" href="attendees.php">Attendees</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="events-with-attendees.php">Events with Attendees</a>
-        </li>
-          <li class="nav-item">
           <a class="nav-link" href="rsvps.php">RSVPS</a>
         </li>
           <li class="nav-item">
