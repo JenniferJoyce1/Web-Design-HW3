@@ -7,6 +7,7 @@
       <th>Attendee Last Name</th>
       <th> </th>
       <th>Relationship</th>
+      <th> </th>
       <th>Guest Name</th>
         </tr>
     </thead>
@@ -19,6 +20,7 @@ while ($guest = $guests -> fetch_assoc()) {
      <td><?php echo $guest['Attendee_LastName']; ?></td>
      <td> is bringing their </td>
      <td><?php echo $guest['Guest_Relationship']; ?></td>
+     <td> whose name is </td>
      <td><?php echo $guest['Guest_Name']; ?></td>
   </tr>
 <?php      
