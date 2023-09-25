@@ -7,7 +7,7 @@
       <th>Name</th>
       <th>Date</th>
       <th>Location</th>
-      <th>__</th>
+      <th>Hyperlink</th>
         </tr>
     </thead>
     <tbody>
