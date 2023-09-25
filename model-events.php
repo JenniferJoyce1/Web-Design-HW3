@@ -2,7 +2,7 @@
 function selectEvents() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT Event_ID, Event_Name, Event_Date, Event_Location FROM `Event`");
+        $stmt = $conn->prepare("SELECT * FROM `Event`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
