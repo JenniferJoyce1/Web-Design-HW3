@@ -30,6 +30,9 @@
         </li>
           <li class="nav-item">
           <a class="nav-link" href="guests.php">Guests</a>
+         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="rsvps.php">(See all Events and their respective attendees)</a>
         </li>
       </ul>
     </div>
