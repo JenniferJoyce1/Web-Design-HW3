@@ -19,7 +19,7 @@ while ($event = $events -> fetch_assoc()) {
      <td><?php echo $event['Event_Name']; ?></td>
      <td><?php echo $event['Event_Date']; ?></td>
      <td><?php echo $event['Event_Location']; ?></td>
-     <td><a href="attendees-by-event.php?id=<?php echo $event['Event_ID']; ?>Attendees</a></td>
+     <td><a href="attendees-by-event.php?id=<?php echo $event['Event_ID']; ?>">Attendees</a></td>
   </tr>
 <?php      
 }
