@@ -16,7 +16,6 @@ while ($guest = $guests -> fetch_assoc()) {
   <tr> 
      <td><?php echo $guest['Attendee_FirstName']; ?></td>
      <td><?php echo $guest['Attendee_LastName']; ?></td>
-    
      <td><?php echo $guest['Guest_Relationship']; ?></td>
      <td><?php echo $guest['Guest_Name']; ?></td>
   </tr>
