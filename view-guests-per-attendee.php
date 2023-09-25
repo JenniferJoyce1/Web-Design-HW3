@@ -5,7 +5,7 @@
       <tr> 
       <th>Attendee First Name</th>   
       <th>Attendee Last Name</th>
-      <th>is bringing their</th>
+      <th> </th>
       <th>Relationship</th>
       <th>Guest Name</th>
         </tr>
