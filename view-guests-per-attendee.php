@@ -14,10 +14,10 @@
 while ($guest = $guests -> fetch_assoc()) {
 ?>
   <tr> 
-     <td><?php echo $guests['Attendee_FirstName']; ?></td>
-     <td><?php echo $guests['Attendee_LastName']; ?></td>
-     <td><?php echo $guests['Guest_Relationship']; ?></td>
-     <td><?php echo $guests['Guest_Name']; ?></td>
+     <td><?php echo $guest['Attendee_FirstName']; ?></td>
+     <td><?php echo $guest['Attendee_LastName']; ?></td>
+     <td><?php echo $guest['Guest_Relationship']; ?></td>
+     <td><?php echo $guest['Guest_Name']; ?></td>
   </tr>
 <?php      
 }
