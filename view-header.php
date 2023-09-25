@@ -31,6 +31,9 @@
           <li class="nav-item">
           <a class="nav-link" href="rsvps.php">RSVPS</a>
         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="guests.php">Guests</a>
+        </li>
       </ul>
     </div>
   </div>
