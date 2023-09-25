@@ -8,6 +8,7 @@
       <th>Last Name</th>
       <th>Email</th>
       <th>RSVP Status</th>
+      <th>See their Guests</th>
         </tr>
     </thead>
     <tbody>
@@ -20,6 +21,7 @@ while ($attendee = $attendees -> fetch_assoc()) {
      <td><?php echo $attendee['Attendee_LastName']; ?></td>
      <td><?php echo $attendee['Attendee_Email']; ?></td>
      <td><?php echo $attendee['RSVP_Status']; ?></td>
+     <td><a href="guests-per-attendee.php?id=<?php echo $attendee['Attendee_ID']; ?>">Guests</a></td>
   </tr>
 <?php      
 }
