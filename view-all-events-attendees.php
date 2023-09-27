@@ -18,7 +18,7 @@ while ($event = $events -> fetch_assoc()) {
 ?>
       </ul>
       </p>
-      <p class="card-text"><small class="text-body-secondary">Date: <td><?php echo $event['Event_Date']; ?>Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-body-secondary">Date: <td><?php echo $event['Event_Date']; ?></p>
     </div>
   </div>
 <?php      
