@@ -1,4 +1,4 @@
-<h1>Attendees</h1>
+<h1>RSVP Table</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
