@@ -21,7 +21,7 @@ while ($attendee = $attendees -> fetch_assoc()) {
      <td><?php echo $attendee['Attendee_Email']; ?></td>
      <td>
        <form meathod = "post" action="guests-per-attendee.php">
-         <input type="hidden" name="cid" value="<?php echo $attendee['Attendee_ID']; ?>">
+         <input type="hidden" name="iid" value="<?php echo $attendee['Attendee_ID']; ?>">
         <button type="submit" class="btn btn-primary">Guests</button>
       </form>
   </td>
