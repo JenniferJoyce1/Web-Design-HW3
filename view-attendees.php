@@ -20,10 +20,10 @@ while ($attendee = $attendees -> fetch_assoc()) {
      <td><?php echo $attendee['Attendee_LastName']; ?></td>
      <td><?php echo $attendee['Attendee_Email']; ?></td>
      <td>
-       <form meathod = "post" action="guests_per_attendee.php">
+       <form meathod = "post" action="guests-per-attendee.php">
          <input type="hidden" name="cid" value="<?php echo $attendee['Attendee_ID']; ?>">
         <button type="submit" class="btn btn-primary">Guests</button>
-      </form>>
+      </form>
   </td>
   </tr>
 <?php      
