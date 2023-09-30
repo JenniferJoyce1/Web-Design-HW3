@@ -4,7 +4,7 @@ require_once("model-guests-per-attendee.php");
 
 $pageTitle = "Attendees' Guests";
 include "view-header.php";
-$guests = selectGuestsPerAttendee($_GET['id']);
+$guests = selectGuestsPerAttendee($_POST['id']);
 include "view-guests-per-attendee.php";
 include "view-footer.php";
 ?>
