@@ -7,7 +7,7 @@
       <th>First Name</th>
       <th>Last Name</th>
       <th>Email</th>
-      <th>Hyperlink</th>
+      <th>Post Button</th>
         </tr>
     </thead>
     <tbody>
@@ -19,7 +19,12 @@ while ($attendee = $attendees -> fetch_assoc()) {
      <td><?php echo $attendee['Attendee_FirstName']; ?></td>
      <td><?php echo $attendee['Attendee_LastName']; ?></td>
      <td><?php echo $attendee['Attendee_Email']; ?></td>
-     <td><a href="guests-per-attendee.php?id=<?php echo $attendee['Attendee_ID']; ?>">Guests</a></td>
+     <td>
+       <form meathod = "post" action="guests_per_attendee.php">
+         <input type="hidden" name="cid" value="<?php echo $attendee['Attendee_ID']; ?>">
+        <button type="submit" class="btn btn-primary">Guests</button>
+      </form>>
+  </td>
   </tr>
 <?php      
 }
