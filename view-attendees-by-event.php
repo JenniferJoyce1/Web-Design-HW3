@@ -19,7 +19,12 @@ while ($attendee = $attendees -> fetch_assoc()) {
      <td><?php echo $attendee['Attendee_LastName']; ?></td>
      <td><?php echo $attendee['Attendee_Email']; ?></td>
      <td><?php echo $attendee['RSVP_Status']; ?></td>
-     <td><a href="guests-per-attendee.php?id=<?php echo $attendee['Attendee_ID']; ?>">Guests</a></td>
+     <td>
+       <form method = "post" action="guests-per-attendee.php">
+         <input type="hidden" name="pid" value="<?php echo $attendee['Attendee_ID']; ?>">
+        <button type="submit" class="btn btn-primary">Guests</button>
+      </form>
+  </td>
   </tr>
 <?php      
 }
