@@ -19,6 +19,9 @@ include "view-events-newform.php";
       <th>Date</th>
       <th>Location</th>
       <th>Hyperlink</th>
+      <th></th>
+      <th></th>
+      <th></th>
         </tr>
     </thead>
     <tbody>
@@ -31,6 +34,8 @@ while ($event = $events -> fetch_assoc()) {
      <td><?php echo $event['Event_Date']; ?></td>
      <td><?php echo $event['Event_Location']; ?></td>
      <td><a href="attendees-by-event.php?id=<?php echo $event['Event_ID']; ?>">Attendees</a></td>
+     <td>  </td>
+     <td>  </td>
   </tr>
 <?php      
 }
