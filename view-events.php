@@ -4,7 +4,7 @@
   </div>
   <div class = "col-auto">
 <?php
-include "view-events-newform.php";
+  include "view-events-newform.php";
 ?>
   </div>
 </div>
@@ -46,7 +46,11 @@ while ($event = $events -> fetch_assoc()) {
             </button>
           </form>  
      </td>
-     <td>  </td>
+     <td> 
+           <?php
+                include "view-events-editform.php";
+            ?>
+     </td>
   </tr>
 <?php      
 }
