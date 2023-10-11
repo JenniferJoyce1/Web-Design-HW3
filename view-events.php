@@ -5,12 +5,11 @@
   <div class = "col-auto">
 <?php
   include "view-events-newform.php";
-  include "view-events-editform.php";
 ?>
   </div>
 </div>
 
-<h1>h1>
+<h1>  <h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
