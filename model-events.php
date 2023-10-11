@@ -31,7 +31,7 @@ function insertEvents($eName, $eDate, $eLocation) {
 function updateEvents($eName, $eDate, $eLocation, $eID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE 'Event' SET 'Event_Name' = ?, 'Event_Date' = ?, 'Event_Location' = ?) WHERE Event_ID = ?");
+        $stmt = $conn->prepare("UPDATE Event SET Event_Name = ?, Event_Date = ?, Event_Location = ?) WHERE Event_ID = ?");
         $stmt->bind_param("sssi", $eName, $eDate, $eLocation, $eID);
         $success = $stmt->execute();
         $conn->close();
@@ -45,7 +45,7 @@ function updateEvents($eName, $eDate, $eLocation, $eID) {
 function deleteEvents($eID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("DELETE FROM 'event' WHERE 'Event_ID' = ? ");
+        $stmt = $conn->prepare("DELETE FROM Event WHERE Event_ID = ? ");
         $stmt->bind_param("i", $eID);
         $success = $stmt->execute();
         $conn->close();
