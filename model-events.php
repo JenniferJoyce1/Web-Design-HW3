@@ -16,7 +16,7 @@ function selectEvents() {
 function insertEvents($eName, $eDate, $eLocation) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO 'Event' ('Event_Name', 'Event_Date', 'Event_Location') VALUES (?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO Event (Event_Name, Event_Date, Event_Location) VALUES (?, ?, ?)");
         $stmt->bind_param("sss", $eName, $eDate, $eLocation);
         $success = $stmt->execute();
         $conn->close();
