@@ -36,7 +36,7 @@ while ($event = $events -> fetch_assoc()) {
      <td><a href="attendees-by-event.php?id=<?php echo $event['Event_ID']; ?>">Attendees</a></td>
      <td>
          <form method = "post" action="">
-            <input type="hidden" name="pid" value="<?php echo $event['Event_ID']; ?>">
+            <input type="hidden" name="eID" value="<?php echo $event['Event_ID']; ?>">
              <input type = "hidden" name="actionType" value = "Delete">
             <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure you would like to delete this event?');"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
