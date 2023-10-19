@@ -1,6 +1,10 @@
 <select class="form-select" id = "iid" name="iid">
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
+<?php
+while ($attendeeItem = $attendeeList-> fetch_assoc())
+{
+?>
+<?php
+  <option value="<?php echo $attendeeItem['Attendee_ID']; ?> "><?php echo $attendeeItem['Attendee_FirstName']; ?></option>
+?>
+}
 </select>
