@@ -32,7 +32,7 @@
           <a class="nav-link" href="guests.php">Guests</a>
          </li>
           <li class="nav-item">
-          <a class="nav-link" href="all-events-attendees.php">(See all Events and their respective attendees)</a>
+          <a class="nav-link" href="all-events-attendees.php">All Events Info</a>
         </li>
       </ul>
     </div>
