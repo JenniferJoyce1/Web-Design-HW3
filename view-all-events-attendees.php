@@ -4,7 +4,7 @@
   </div>
   <div class = "col-auto">
 <?php
-  include "view-events-newform.php";
+  include "view-all-events-attendees-newform.php";
 ?>
   </div>
 </div>
