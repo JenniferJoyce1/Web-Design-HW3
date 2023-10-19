@@ -60,11 +60,25 @@ function selectEventsForInput() {
     }
 }
 
+function updateAttendees($aFName, $aLName, $aEmail, $aID) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("UPDATE Attendee SET Attendee_FirstName = ?, Attendee_LastName = ?, Attendee_Email = ? WHERE Attendee_ID = ?");
+        $stmt->bind_param("sssi", $aFName, $aLName, $aEmail, $aID);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 
 function selectAttendeesForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT Attendee_ID, Attendee_FirstName,  Attendee_LastName FROM Attendee ORDER BY Attendee_FirstName");
+        $stmt = $conn->prepare("SELECT Attendee_ID, Attendee_FirstName, Attendee_LastName FROM Attendee ORDER BY Attendee_FirstName");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
