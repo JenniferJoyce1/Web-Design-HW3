@@ -24,18 +24,14 @@
                     <?php
                         eventList = selectEventsForInput();
                         include "view-event-input-list.php"
+                        ?>        
+            </div>
+            <div class="mb-3">
+              <label for="aName" class="form-label">Attendee Name</label>
+                         <?php
+                        eventList = selectAttendeesForInput();
+                        include "view-attendee-input-list.php"
                         ?>
-
-
-                    
-            </div>
-            <div class="mb-3">
-              <label for="eDate" class="form-label">Event Date</label>
-              <input type="text" class="form-control" id="eDate" name="eDate">
-            </div>
-            <div class="mb-3">
-              <label for="eLocation" class="form-label">Event Location</label>
-              <input type="text" class="form-control" id="eLocation" name="eLocation">
             </div>
                    <input type= "hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Submit Event</button>
