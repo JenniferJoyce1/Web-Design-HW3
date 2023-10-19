@@ -22,7 +22,7 @@
             <div class="mb-3">
               <label for="eName" class="form-label">Event Name</label>
                     <?php
-                        eventList = selectEventForInput();
+                        eventList = selectEventsForInput();
                         include "view-event-input-list.php"
                         ?>
 
