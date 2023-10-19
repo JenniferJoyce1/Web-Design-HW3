@@ -17,28 +17,31 @@
       </div>
       <div class="modal-body">
 
-              
         <form method = "post" action="">
             <div class="mb-3">
               <label for="eName" class="form-label">Event Name</label>
                     <?php
-                        eventList = selectEventsForInput();
+                        $eventList = selectEventsForInput();
+                        $selectedEvent = 0;
                         include "view-event-input-list.php"
                         ?>        
             </div>
-            <div class="mb-3">
-              <label for="aName" class="form-label">Attendee Name</label>
-                         <?php
-                        attendeeList = selectAttendeesForInput();
-                        include "view-attendee-input-list.php"
-                        ?>
+           <div class="mb-3">
+              <label for="aFName<?php echo $attendee['Attendee_FirstName']; ?>" class="form-label">Attendee First Name</label>
+              <input type="text" class="form-control" id="aFName<?php echo $attendee['Attendee_FirstName']; ?>" name="aFName" value="<?php echo $attendee['Attendee_FirstName']; ?>">
+            </div>
+           <div class="mb-3">
+              <label for="aLName<?php echo $attendee['Attendee_LastName']; ?>" class="form-label">Attendee Last Name</label>
+              <input type="text" class="form-control" id="aLName<?php echo $attendee['Attendee_LastName']; ?>" name="aLName" value="<?php echo $attendee['Attendee_LastName']; ?>">
+            </div>
+          <div class="mb-3">
+              <label for="aEmail<?php echo $attendee['Attendee_Email']; ?>" class="form-label">Attendee Email</label>
+              <input type="text" class="form-control" id="aEmail<?php echo $attendee['Attendee_Email']; ?>" name="aEmail" value="<?php echo $attendee['Attendee_Email']; ?>">
             </div>
                    <input type= "hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Submit Event</button>
         </form>
-
-
-              
+   
       </div>
     </div>
   </div>
