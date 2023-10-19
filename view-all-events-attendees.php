@@ -1,6 +1,6 @@
 <div class = "row">
   <div class = "col">
-    <h2>Events and their Attendees</h2>
+    <h3>Events and their Attendees</h3>
   </div>
   <div class = "col-auto">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-plus" viewBox="0 0 16 16">
