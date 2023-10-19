@@ -46,6 +46,39 @@ function updateEvents($eName, $eDate, $eLocation, $eID) {
     }
 }
 
+function selectEventsForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT Event_ID , Event_Name FROM Event ORDER BY Event_Name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+function selectAttendeesForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT Attendee_ID, Attendee_FirstName,  Attendee_LastName FROM Attendee ORDER BY Attendee_FirstName");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+
+
+
 function deleteEvents($eID) {
     try {
         $conn = get_db_connection();
