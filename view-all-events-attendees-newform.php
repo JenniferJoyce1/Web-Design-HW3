@@ -29,7 +29,7 @@
             <div class="mb-3">
               <label for="aName" class="form-label">Attendee Name</label>
                          <?php
-                        eventList = selectAttendeesForInput();
+                        attendeeList = selectAttendeesForInput();
                         include "view-attendee-input-list.php"
                         ?>
             </div>
