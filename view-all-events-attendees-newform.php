@@ -22,7 +22,6 @@
               <label for="eName" class="form-label">Event Name</label>
                     <?php
                         $eventList = selectEventsForInput();
-                        $selectedEvent = 0;
                         include "view-event-input-list.php"
                         ?>        
             </div>
