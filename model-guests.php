@@ -14,6 +14,49 @@ function selectGuests() {
 }
 
 
+function insertEvents($gName, $gRelationship) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO Guest (Guest_Name, Guest_Relationship) VALUES (?, ?)");
+        $stmt->bind_param("ss", $gName, $gRelationship);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+function updateEvents($gName, $gRelationship, $gID) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("UPDATE Guest SET Guest_Name = ?, Guest_Relationship = ?, WHERE Guest_ID = ?");
+        $stmt->bind_param("ssi", $gName, $gRelationship, $gID);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function deleteEvents($gID) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("DELETE FROM Guest WHERE Guest_ID = ? ");
+        $stmt->bind_param("i", $gID);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 
 function selectGuestsForInput() {
     try {
