@@ -30,12 +30,12 @@
               <input type="text" class="form-control" id="aFName" name="aFName" value="">
             </div>
            <div class="mb-3">
-              <label for="aLName<?php echo $attendee['Attendee_LastName']; ?>" class="form-label">Attendee Last Name</label>
-              <input type="text" class="form-control" id="aLName<?php echo $attendee['Attendee_LastName']; ?>" name="aLName" value="<?php echo $attendee['Attendee_LastName']; ?>">
+              <label for="aLName" class="form-label">Attendee Last Name</label>
+              <input type="text" class="form-control" id="aLName" name="aLName" value="">
             </div>
           <div class="mb-3">
-              <label for="aEmail<?php echo $attendee['Attendee_Email']; ?>" class="form-label">Attendee Email</label>
-              <input type="text" class="form-control" id="aEmail<?php echo $attendee['Attendee_Email']; ?>" name="aEmail" value="<?php echo $attendee['Attendee_Email']; ?>">
+              <label for="aEmail" class="form-label">Attendee Email</label>
+              <input type="text" class="form-control" id="aEmail" name="aEmail" value="">
             </div>
                    <input type= "hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Submit Event</button>
