@@ -16,7 +16,6 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-
         <form method = "post" action="">
             <div class="mb-3">
               <label for="eName" class="form-label">Event Name</label>
@@ -25,16 +24,15 @@
                         include "view-event-input-list.php"
                         ?>        
             </div>
-        <div class="modal-body">
-
-        <form method = "post" action="">
-            <div class="mb-3">
-              <label for="aFName" class="form-label">Attendee Name</label>
-                    <?php
-                        $attendeeList = selectAttendeeForInput();
-                        include "view-attendee-input-list.php"
-                        ?>        
-            </div>
+                <div class="mb-3">
+                <form method = "post" action="">
+                    <div class="mb-3">
+                      <label for="aFName" class="form-label">Attendee First Name</label>
+                            <?php
+                                $attendeeList = selectAttendeeForInput();
+                                include "view-attendee-input-list.php"
+                                ?>        
+                  </div>
            <div class="mb-3">
               <label for="aFName" class="form-label">Attendee First Name</label>
               <input type="text" class="form-control" id="aFName" name="aFName" value="">
