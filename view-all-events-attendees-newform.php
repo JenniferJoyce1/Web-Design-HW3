@@ -38,7 +38,7 @@
               <input type="text" class="form-control" id="aEmail" name="aEmail" value="">
             </div>
                    <input type= "hidden" name="actionType" value="Add">
-            <button type="submit" class="btn btn-primary">Submit Event</button>
+            <button type="submit" class="btn btn-primary">Add Attendee to this Event</button>
         </form>
    
       </div>
