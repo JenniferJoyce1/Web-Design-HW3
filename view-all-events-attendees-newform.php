@@ -26,8 +26,8 @@
                         ?>        
             </div>
            <div class="mb-3">
-              <label for="aFName<?php echo $attendee['Attendee_FirstName']; ?>" class="form-label">Attendee First Name</label>
-              <input type="text" class="form-control" id="aFName<?php echo $attendee['Attendee_FirstName']; ?>" name="aFName" value="<?php echo $attendee['Attendee_FirstName']; ?>">
+              <label for="aFName" class="form-label">Attendee First Name</label>
+              <input type="text" class="form-control" id="aFName" name="aFName" value="">
             </div>
            <div class="mb-3">
               <label for="aLName<?php echo $attendee['Attendee_LastName']; ?>" class="form-label">Attendee Last Name</label>
