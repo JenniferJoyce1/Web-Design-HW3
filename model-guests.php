@@ -29,11 +29,11 @@ function insertEvents($gName, $gRelationship) {
 }
 
 
-function updateEvents($gName, $gRelationship, $gID) {
+function updateEvents($aID, $gName, $gRelationship, $gID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE Guest SET Guest_Name = ?, Guest_Relationship = ?, WHERE Guest_ID = ?");
-        $stmt->bind_param("ssi", $gName, $gRelationship, $gID);
+        $stmt = $conn->prepare("UPDATE Guest SET Attendee_ID = ?, Guest_Name = ?, Guest_Relationship = ?, WHERE Guest_ID = ?");
+        $stmt->bind_param("issi", $gName, $gRelationship, $gID);
         $success = $stmt->execute();
         $conn->close();
         return $success;
