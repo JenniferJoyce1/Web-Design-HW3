@@ -31,7 +31,7 @@
               <label for="gRelationship<?php echo$guest['Guest_ID']; ?>" class="form-label">Guest Relationship to Attendee</label>
               <input type="text" class="form-control" id="gRelationship<?php echo $guest['Guest_ID']; ?>" name="gRelationship" value="<?php echo $guest['Guest_Relationship']; ?>">
             </div>
-                     <input type= "hidden" name="gID" value="<?php echo $guest['guest_ID']; ?>">
+                     <input type= "hidden" name="gID" value="<?php echo $guest['Guest_ID']; ?>">
                    <input type= "hidden" name="actionType" value="Edit">
             <button type="submit" class="btn btn-primary">Save Guest Info</button>
         </form>
