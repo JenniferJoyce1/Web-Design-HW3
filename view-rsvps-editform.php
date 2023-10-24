@@ -22,7 +22,7 @@
               <input type="text" class="form-control" id="eID<?php echo $rsvp['RSVP_ID']; ?>" name="eID" value="<?php echo $rsvp['Event_ID']; ?>" >
             </div>
             <div class="mb-3">
-              <label for="aID<?php echo $rsvps['RSVP_ID']; ?>" class="form-label">Attendee ID</label>
+              <label for="aID<?php echo $rsvp['RSVP_ID']; ?>" class="form-label">Attendee ID</label>
               <input type="text" class="form-control" id="aID<?php echo $rsvp['RSVP_ID']; ?>" name="aID" value="<?php echo $rsvp['Attendee_ID']; ?>">
             </div>
             <div class="mb-3">
