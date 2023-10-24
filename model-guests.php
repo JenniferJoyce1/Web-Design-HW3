@@ -29,7 +29,7 @@ function insertGuests($gName, $gRelationship) {
 }
 
 
-function updateGuests($aID $gName, $gRelationship, $gID) {
+function updateGuests($aID, $gName, $gRelationship, $gID) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE Guest SET Attendee_ID = ?, Guest_Name = ?, Guest_Relationship = ?, WHERE Guest_ID = ?");
