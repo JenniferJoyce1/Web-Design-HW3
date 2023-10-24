@@ -14,7 +14,7 @@ function selectAttendees() {
 }
 
 
-function insertEvents($aFName, $aLName, $aEmail) {
+function insertAttendees($aFName, $aLName, $aEmail) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO Attendee (Attendee_FirstName, Attendee_LastName, Attendee_Email) VALUES (?, ?, ?)");
@@ -29,7 +29,7 @@ function insertEvents($aFName, $aLName, $aEmail) {
 }
 
 
-function updateEvents($aFName, $aLName, $aEmail, $aID) {
+function updateAttendees($aFName, $aLName, $aEmail, $aID) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE Attendee SET Attendee_FirstName = ?, Attendee_LastName = ?, Attendee_Email = ? WHERE Attendee_ID = ?");
@@ -43,7 +43,7 @@ function updateEvents($aFName, $aLName, $aEmail, $aID) {
     }
 }
 
-function deleteEvents($aID) {
+function deleteAttendees($aID) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("DELETE FROM Attendee WHERE Attendee_ID = ? ");
