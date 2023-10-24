@@ -14,7 +14,7 @@ function selectGuests() {
 }
 
 
-function insertEvents($gName, $gRelationship) {
+function insertGuests($gName, $gRelationship) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO Guest (Guest_Name, Guest_Relationship) VALUES (?, ?)");
@@ -29,7 +29,7 @@ function insertEvents($gName, $gRelationship) {
 }
 
 
-function updateEvents($aID, $gName, $gRelationship, $gID) {
+function updateGuests($aID, $gName, $gRelationship, $gID) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE Guest SET Attendee_ID = ?, Guest_Name = ?, Guest_Relationship = ?, WHERE Guest_ID = ?");
@@ -43,7 +43,7 @@ function updateEvents($aID, $gName, $gRelationship, $gID) {
     }
 }
 
-function deleteEvents($gID) {
+function deleteGuests($gID) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("DELETE FROM Guest WHERE Guest_ID = ? ");
