@@ -15,13 +15,9 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body"> 
-        <form method = "post" action="">
             <div class="mb-3">
-              <label for="aName" class="form-label">Attendee Name</label>
-                    <?php
-                        $attendeeList = selectAttendeesForInput();
-                        include "view-attendee-input-list.php"
-                        ?>        
+              <label for="gName<?php echo $guest['Guest_ID']; ?>" class="form-label">Attendee ID </label>
+              <input type="text" class="form-control" id="gName<?php echo$guest['Guest_ID']; ?>" name="gName" value="<?php echo $guest['Attendee_ID']; ?>">
             </div>
             <div class="mb-3">
               <label for="gName<?php echo $guest['Guest_ID']; ?>" class="form-label">Guest Name (First and Last)</label>
