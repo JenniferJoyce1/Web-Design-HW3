@@ -14,11 +14,11 @@ function selectGuests() {
 }
 
 
-function insertGuests($gName, $gRelationship) {
+function insertGuests($aID, $gName, $gRelationship) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO Guest (Guest_Name, Guest_Relationship) VALUES (?, ?)");
-        $stmt->bind_param("ss", $gName, $gRelationship);
+        $stmt = $conn->prepare("INSERT INTO Guest (Attendee_ID, Guest_Name, Guest_Relationship) VALUES (?, ?, ?)");
+        $stmt->bind_param("iss", $gName, $gRelationship);
         $success = $stmt->execute();
         $conn->close();
         return $success;
