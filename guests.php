@@ -24,7 +24,7 @@ if (isset($_POST['actionType'])){
       }
         break;
         case "Edit":
-      if (updateGuests($_POST['aID'], $_POST['gName'], $_POST['gRelationship'],$_POST['gID'])) {
+      if (updateGuests($_POST[aID], $_POST['gName'], $_POST['gRelationship'],$_POST['gID'])) {
         echo '<div class="alert alert-success" role="alert" > Success! Event Edited.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> Error.</div>';
