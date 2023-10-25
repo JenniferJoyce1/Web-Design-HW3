@@ -16,13 +16,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form method = "post" action="">
-            <div class="mb-3">
-              <label for="aFName" class="form-label">Attendee Name</label>
-                    <?php
-                        $attendeeList = selectAttendeesForInput();
-                        include "view-attendee-input-list.php"
-                        ?>        
+
+           <div class="mb-3">
+              <label for="aID" class="form-label">Attendee ID</label>
+              <input type="text" class="form-control" id="aID" name="aID" value="">
             </div>
 
            <div class="mb-3">
