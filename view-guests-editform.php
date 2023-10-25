@@ -14,8 +14,9 @@
         <h1 class="modal-title fs-5" id="editGuestsModalLabel<?php echo $guest['Guest_ID']; ?> ">Edit Guest</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body"> 
-            <div class="mb-3">
+      <div class="modal-body">
+              <form method="post" action="">
+        <div class="mb-3">
               <label for="aID<?php echo $guest['Guest_ID']; ?>" class="form-label">Attendee ID </label>
               <input type="text" class="form-control" id="aID<?php echo$guest['Guest_ID']; ?>" name="aID" value="<?php echo $guest['Attendee_ID']; ?>">
             </div>
