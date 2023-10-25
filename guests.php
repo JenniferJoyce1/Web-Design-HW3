@@ -10,7 +10,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])){
   switch ($_POST['actionType']) {
     case "Add":
-      if (insertGuests($_POST['gName'], $_POST['gRelationship'])) {
+      if (insertGuests($_POST[aID], $_POST['gName'], $_POST['gRelationship'])) {
         echo '<div class="alert alert-success" role="alert" > Success! Event Added.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> Error.</div>';
