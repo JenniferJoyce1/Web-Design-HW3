@@ -18,7 +18,7 @@ function insertGuests($aID, $gName, $gRelationship) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO Guest (Attendee_ID, Guest_Name, Guest_Relationship) VALUES (?, ?, ?)");
-        $stmt->bind_param("iss", $gName, $gRelationship);
+        $stmt->bind_param("iss", $aID, $gName, $gRelationship);
         $success = $stmt->execute();
         $conn->close();
         return $success;
