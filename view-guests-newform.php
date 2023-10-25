@@ -28,7 +28,7 @@
             </div>
            <div class="mb-3">
               <label for="gRelationship" class="form-label">Guest Relationship</label>
-              <input type="text" class="form-control" id="gRelationship" name="gRelationship value="">
+              <input type="text" class="form-control" id="gRelationship" name="gRelationship" value="">
             </div>
 
                    <input type= "hidden" name="actionType" value="Add">
