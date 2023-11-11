@@ -34,6 +34,9 @@
           <li class="nav-item">
           <a class="nav-link" href="all-events-attendees.php">All Events Info</a>
         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="events-chart.php">Events Chart</a>
+        </li>
       </ul>
     </div>
   </div>
