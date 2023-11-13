@@ -3,6 +3,17 @@
 yarn add @glimmerx/core @glimmerx/component
 <script src="https://glimmerjs.github.io/glimmer-experimental/"></script>
 
+
+
+
+
+import Component, { hbs } from '@glimmerx/component';
+export default class extends Component {
+  static template = hbs`
+      <button>Click me</button>
+    `;
+}
+
 <script>
 import Component, { hbs, tracked } from '@glimmerx/component';
 import { on, action } from '@glimmerx/modifier';
