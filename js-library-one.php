@@ -1,4 +1,4 @@
-<h1>JavaScrip Library</h1>
+<h2>w3schools.js</h2>
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <body>
@@ -16,6 +16,34 @@ w3.slideshow(".nature", 1500);
 
 
 
+<h2>Choreographer.js</h2>
+  
+<script src="your_path/choreographer.min.js"></script>
+let choreographer = new Choreographer({
+  animations: [    
+    {
+      range: [-1, window.innerWidth / 2],
+      selector: '#box',
+      type: 'change',
+      style: 'transform:translateY',
+      to: 300,
+      unit: 'px'
+    }
+  ]
+})
+
+document.body.addEventListener('mousemove', (e) => {
+  choreographer.runAnimationsAt(e.clientX)
+})
+
+
+
+
+  
+
+  
+
+<h2>React.js</h2>
 
 import { useState } from 'react';
 
