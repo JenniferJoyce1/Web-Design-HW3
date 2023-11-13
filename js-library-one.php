@@ -1,5 +1,5 @@
 <h1>JavaScrip Library</h1>
-<script>
+
 import Component, { hbs, tracked } from '@glimmerx/component';
 import { on, action } from '@glimmerx/modifier';
 
@@ -18,4 +18,4 @@ export default class HelloWorld extends Component {
     <button {{on "click" this.increment}}>Click</button>
   `;
 }
-</script>
+
