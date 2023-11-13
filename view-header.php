@@ -37,6 +37,10 @@
           <li class="nav-item">
           <a class="nav-link" href="events-chart.php">Events Chart</a>
         </li>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="js-library-one.php">Other JS Library</a>
+        </li>
       </ul>
     </div>
   </div>
