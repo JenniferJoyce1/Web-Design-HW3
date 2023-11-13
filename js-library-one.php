@@ -1,6 +1,6 @@
 <h1>JavaScrip Library</h1>
 
-
+yarn add @glimmerx/core @glimmerx/component
 <script src="https://glimmerjs.github.io/glimmer-experimental/"></script>
 
 <script>
