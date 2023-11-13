@@ -35,6 +35,6 @@ while ($event = $events -> fetch_assoc()) {
 ?>
 
     ]
-};
+}
   });
 </script>
