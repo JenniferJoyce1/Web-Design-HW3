@@ -17,26 +17,51 @@ w3.slideshow(".nature", 1500);
 
 
 <h2>Choreographer.js</h2>
-  
-<script src="your_path/choreographer.min.js"></script>
-<script>
-let choreographer = new Choreographer({
-  animations: [    
-    {
-      range: [-1, window.innerWidth / 2],
-      selector: '#box',
-      type: 'change',
-      style: 'transform:translateY',
-      to: 300,
-      unit: 'px'
-    }
-  ]
-})
+ <style>
+      p {
+        position: fixed;
+        top: 100px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-family: 'Arial', sans-serif;
+        color: white;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+      }
 
-document.body.addEventListener('mousemove', (e) => {
-  choreographer.runAnimationsAt(e.clientX)
-})
-</script>
+      #box {
+        margin: 0 0;
+        width: 100vw;
+        height: 100vh;
+        background: black;
+        opacity: 0.2;
+      }
+    </style>
+
+    <p>Animating based on mouse movement.</p>
+    <div id="box"></div>
+
+    <script src="../dist/choreographer.min.js"></script>
+    <script>
+      var choreographer = new Choreographer({
+        animations: [
+          {
+            range: [-1, window.innerWidth],
+            selector: '#box',
+            type: 'scale',
+            style: 'opacity',
+            from: 0.2,
+            to: 1
+          }
+        ]
+      })
+
+      window.addEventListener('mousemove', function(e) {
+        choreographer.runAnimationsAt(e.clientX)
+      })
+    </script>
 
 
   
