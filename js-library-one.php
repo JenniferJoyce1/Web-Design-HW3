@@ -19,6 +19,7 @@ w3.slideshow(".nature", 1500);
 <h2>Choreographer.js</h2>
   
 <script src="your_path/choreographer.min.js"></script>
+<script>
 let choreographer = new Choreographer({
   animations: [    
     {
@@ -35,8 +36,7 @@ let choreographer = new Choreographer({
 document.body.addEventListener('mousemove', (e) => {
   choreographer.runAnimationsAt(e.clientX)
 })
-
-
+</script>
 
 
   
