@@ -1,4 +1,19 @@
 <h1>JavaScrip Library</h1>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<body>
+
+<img class="nature" src="img_snowtops.jpg" width="20%" height = "20%">
+<img class="nature" src="img_mountains.jpg" width="20%" height = "20%">
+<img class="nature" src="img_nature.jpg" width="20%" height = "20%">
+
+<script>
+w3.slideshow(".nature", 1500);
+</script>
+
+
+
+
 import { useState } from 'react';
 
 function Square({ value, onSquareClick }) {
