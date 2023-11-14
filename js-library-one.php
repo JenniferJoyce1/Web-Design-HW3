@@ -89,3 +89,21 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
    </script>
+
+
+<h2>Multiple.js</h2>
+
+<link href="./multiple.css" rel="stylesheet">
+<script src="./multiple.min.js"></script>
+
+  <script>
+.selector {
+  background-image: linear-gradient(white, black);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* <- here it is */
+
+  width: 100px;
+  height: 100px;
+  }
+  </script>
