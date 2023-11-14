@@ -40,7 +40,7 @@ w3.slideshow(".nature", 1500);
       }
     </style>
 
-    <p>Animating based on mouse movement.</p>
+    <p>Animating based on scroll movement.</p>
     <div id="box"></div>
 
     <script src="../dist/choreographer.min.js"></script>
