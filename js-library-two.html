@@ -5,26 +5,23 @@
   </head>
   <body>
 <script>
-import Component, { hbs, tracked } from '@glimmerx/component';
-import { on, action } from '@glimmerx/modifier';
-
-export default class HelloWorld extends Component {
-  @tracked count = 1;
-
-  @action increment() {
-    this.count++;
-  }
-
-  static template = hbs`
-    <h1>Welcome to the GlimmerX Playground!</h1>
-
-    <p>You have clicked the button {{this.count}} times.</p>
-
-    <button {{on "click" this.increment}}>Click</button>
-  `;
-}
-
-
+var granimInstance = new Granim({
+    element: '#logo-canvas',
+    direction: 'left-right',
+    states : {
+        "default-state": {
+            gradients: [
+                ['#EB3349', '#F45C43'],
+                ['#FF8008', '#FFC837'],
+                ['#4CB8C4', '#3CD3AD'],
+                ['#24C6DC', '#514A9D'],
+                ['#FF512F', '#DD2476'],
+                ['#DA22FF', '#9733EE']
+            ],
+            transitionSpeed: 2000
+        }
+    }
+});
 </script>
   </body>
 </html>
