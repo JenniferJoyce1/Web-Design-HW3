@@ -25,7 +25,7 @@ w3.slideshow(".nature", 1500);
         text-transform: uppercase;
         letter-spacing: 0.1em;
         font-family: 'Arial', sans-serif;
-        color: green;
+        color: white;
         text-align: center;
         width: 100%;
         z-index: 1;
@@ -35,7 +35,7 @@ w3.slideshow(".nature", 1500);
         margin: 0 0;
         width: 100vw;
         height: 100vh;
-        background: yellow;
+        background: green;
         opacity: 0.2;
       }
     </style>
@@ -76,16 +76,16 @@ w3.slideshow(".nature", 1500);
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
+ <div id="map"></div>
+#map { height: 180px; }
 
+  
   <script>
-var map = L.map('map').setView([51.505, -0.09], 13);
-
+    var map = L.map('map').setView([51.505, -0.09], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS popup.<br> Easily customizable.')
-    .openPopup();
-</script>
 
+   </script>
