@@ -6,7 +6,7 @@
 <body>
 	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
 </body>
-<scrip>
+<script>
 
 var trace1 = {
   type: 'bar',
@@ -32,4 +32,4 @@ var config = {responsive: true}
 Plotly.newPlot('myDiv', data, layout, config );
 
   
-</scrip>
+</script>
