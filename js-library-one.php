@@ -74,3 +74,4 @@ w3.slideshow(".nature", 1500);
     <source src="//vjs.zencdn.net/v/oceans.mp4">
   </video>
 </div>
+const player = videojs('vid1', {});
