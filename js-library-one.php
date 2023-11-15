@@ -64,53 +64,13 @@ w3.slideshow(".nature", 1500);
     </script>
 
 
-  
-
-  
-
-<h2>Leaflet.js</h2>
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
- <div id="map"></div>
-#map { height: 180px; }
-
-  
-  <script>
-    var map = L.map('map').setView([51.505, -0.09], 13);
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
-
-
-   </script>
-
-
-<h2>Multiple.js</h2>
-
-<link href="./multiple.css" rel="stylesheet">
-<script src="./multiple.min.js"></script>
-
-  <script>
-.selector {
-  background-image: linear-gradient(white, black);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;  /* <- here it is */
-  width: 100px;
-  height: 100px;
-  }
-  </script>
 
 
 
 <h2>Video.js</h2>
   
-  <video id="vid1" class="video-js">
-  <source src="//vjs.zencdn.net/v/oceans.mp4">
-</video>
+<div data-vjs-player>
+  <video id="vid1" class="video-js" data-setup='{}'>
+    <source src="//vjs.zencdn.net/v/oceans.mp4">
+  </video>
+</div>
