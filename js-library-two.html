@@ -2,26 +2,23 @@
 <html lang="en">
   <head>
    <h1>More JavaScript Library Examples</h1>
-        <title>JS Library</title>
-    <script src="dom-tools.js"></script>
-        <script>
-      function addFavoriteAnimalList() {
-        const ulElement = createUlElement(['lions', 'tigers', 'bears']);
-        const animalContainer = document.getElementById('animal-container');
-        animalContainer.appendChild(ulElement);
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script>
+      function setup() {
+        createCanvas(500, 500);
+        background(32);
+      }
+
+      function draw() {
+        fill(random(255), random(255), random(255));
+        circle(random(width), random(height), 25);
       }
     </script>
   </head>
 <h2>Tools.js</h2>
 
-  <body onload="addFavoriteAnimalList();">
-    <p>These are my favorite animals:</p>
-    <div id="animal-container"></div>
+  <body>
+ <h1>My Sketch</h1>
   </body>
 </html>  
 
-    .openPopup();
-</script>
-
-  </body>
-</html>
