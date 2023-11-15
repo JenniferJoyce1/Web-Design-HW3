@@ -103,6 +103,13 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   background-position: center;
   background-attachment: fixed;  /* <- here it is */
 
+
+
+<h2>Video.js</h2>
+  <video id="vid1" class="video-js">
+  <source src="//vjs.zencdn.net/v/oceans.mp4">
+</video>
+
   width: 100px;
   height: 100px;
   }
