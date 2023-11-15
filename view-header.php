@@ -40,7 +40,9 @@
           <li class="nav-item">
           <a class="nav-link" href="js-library-one.php">Other JS Libraries</a>
         </li>
-
+          <li class="nav-item">
+          <a class="nav-link" href="js-library-two.html">Other JS Libraries</a>
+        </li>
       </ul>
     </div>
   </div>
