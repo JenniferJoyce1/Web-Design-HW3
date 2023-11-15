@@ -68,10 +68,10 @@ w3.slideshow(".nature", 1500);
 
 
 <h2>Video.js</h2>
-  
+  <script>
 <div data-vjs-player>
   <video id="vid1" class="video-js" data-setup='{}'>
     <source src="//vjs.zencdn.net/v/oceans.mp4">
   </video>
 </div>
-const player = videojs('vid1', {});
+</script>
