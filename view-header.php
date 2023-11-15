@@ -43,6 +43,10 @@
           <li class="nav-item">
           <a class="nav-link" href="js-library-two.html">Other JS Libraries</a>
         </li>
+                </li>
+          <li class="nav-item">
+          <a class="nav-link" href="new-js.php">more JS Libraries</a>
+        </li>
       </ul>
     </div>
   </div>
