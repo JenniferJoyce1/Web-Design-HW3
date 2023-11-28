@@ -10,11 +10,6 @@
     -->
   </head>
   <body>
-background-image: url('https://media.istockphoto.com/id/1060000540/vector/seamless-graph-paper.jpg?s=612x612&w=0&k=20&c=ewNECSDTQrLv1laSt8qvIeoMsiiw2r2CjH3pnYZOcF4=');
-  background-repeat: no-repeat;
-  background-size: cover; /* You can use 'contain' instead if you want the image to be fully visible */
-  background-position: center center; /* Adjust as needed */
-
     
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
