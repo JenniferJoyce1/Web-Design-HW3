@@ -2,9 +2,11 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
-    <h1>Homework 4</h1>
-    <p> In this homework I created a database for an event planner. There is a table for events, and attendees. 
-        The guest table connects a plus ones to an attendee. The RSVP table connects the attendees to a specific event</p>
+    <h1><b>Perfectly Planned</b></h1>
+    <h2><em>Turning Dreams into Unforgettable Moments: Perfectly Planned, Your Event, Your Way!</em></h2>
+    <p> At Perfectly Planned, we turn your dreams into reality with expert event planning. 
+        Whether it's an intimate birthday, a grand wedding, or a corporate affair, our dedicated team ensures a seamless and memorable experience. 
+        From concept to execution, trust Perfectly Planned to handle the details while you focus on making cherished memories</p>
 <?php
 include "view-footer.php";
 ?>
