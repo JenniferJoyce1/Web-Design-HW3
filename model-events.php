@@ -13,11 +13,11 @@ function selectEvents() {
     }
 }
 
-function insertEvents($eName, $eDate, $eLocation) {
+function insertEvents($eName, $eDate, $eLocation, eCapacity) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO Event (Event_Name, Event_Date, Event_Location) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $eName, $eDate, $eLocation);
+        $stmt = $conn->prepare("INSERT INTO Event (Event_Name, Event_Date, Event_Location, Event_Capacity) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("sssi", $eName, $eDate, $eLocation, $eCapacity);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -28,11 +28,11 @@ function insertEvents($eName, $eDate, $eLocation) {
 }
 
 
-function updateEvents($eName, $eDate, $eLocation, $eID) {
+function updateEvents($eName, $eDate, $eLocation, $eCapacity, $eID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE Event SET Event_Name = ?, Event_Date = ?, Event_Location = ? WHERE Event_ID = ?");
-        $stmt->bind_param("sssi", $eName, $eDate, $eLocation, $eID);
+        $stmt = $conn->prepare("UPDATE Event SET Event_Name = ?, Event_Date = ?, Event_Location = ?, Event_Capacity = ? WHERE Event_ID = ?");
+        $stmt->bind_param("sssii", $eName, $eDate, $eLocation, $eCapacity, $eID);
         $success = $stmt->execute();
         $conn->close();
         return $success;
