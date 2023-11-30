@@ -22,22 +22,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a style="color: PaleVioletRed;" class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
           <a style="color: PaleVioletRed;" class="nav-link" href="events.php">Events</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="attendees.php">Attendees</a>
+          <a style="color: PaleVioletRed;"  class="nav-link" href="attendees.php">Attendees</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="rsvps.php">RSVPS</a>
+          <a style="color: PaleVioletRed;"  class="nav-link" href="rsvps.php">RSVPS</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="guests.php">Guests</a>
+          <a style="color: PaleVioletRed;"  class="nav-link" href="guests.php">Guests</a>
          </li>
           <li class="nav-item">
-          <a class="nav-link" href="all-events-attendees.php">All Events Info</a>
+          <a style="color: PaleVioletRed;" class="nav-link" href="all-events-attendees.php">All Events Info</a>
         </li>
       </ul>
     </div>
