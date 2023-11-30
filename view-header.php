@@ -25,7 +25,7 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a style="color: lightpink;" class="nav-link" href="events.php">Events</a>
+          <a style="color: PaleVioletRed;" class="nav-link" href="events.php">Events</a>
         </li>
           <li class="nav-item">
           <a class="nav-link" href="attendees.php">Attendees</a>
