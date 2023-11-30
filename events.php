@@ -8,7 +8,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])){
   switch ($_POST['actionType']) {
     case "Add":
-      if (insertEvents($_POST['eName'], $_POST['eDate'], $_POST['eLocation'])) {
+      if (insertEvents($_POST['eName'], $_POST['eDate'], $_POST['eLocation'], $_POST['eCapacity'])) {
         echo '<div class="alert alert-success" role="alert" > Success! Event Added.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> Error.</div>';
@@ -22,7 +22,7 @@ if (isset($_POST['actionType'])){
       }
         break;
         case "Edit":
-      if (updateEvents($_POST['eName'], $_POST['eDate'], $_POST['eLocation'], $_POST['eID'])) {
+      if (updateEvents($_POST['eName'], $_POST['eDate'], $_POST['eLocation'], $_POST['eCapacity'], $_POST['eID'])) {
         echo '<div class="alert alert-success" role="alert" > Success! Event Edited.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> Error.</div>';
