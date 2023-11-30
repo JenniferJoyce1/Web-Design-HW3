@@ -18,6 +18,7 @@
       <th>Name</th>
       <th>Date</th>
       <th>Location</th>
+      <th>Capacity</th>
       <th>Hyperlink</th>
       <th></th>
       <th></th>
@@ -33,6 +34,7 @@ while ($event = $events -> fetch_assoc()) {
      <td><?php echo $event['Event_Name']; ?></td>
      <td><?php echo $event['Event_Date']; ?></td>
      <td><?php echo $event['Event_Location']; ?></td>
+     <td><?php echo $event['Event_Capacity']; ?></td>
      <td><a href="attendees-by-event.php?id=<?php echo $event['Event_ID']; ?>">Attendees</a></td>
      <td>
          <form method = "post" action="">
