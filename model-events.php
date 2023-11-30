@@ -13,7 +13,7 @@ function selectEvents() {
     }
 }
 
-function insertEvents($eName, $eDate, $eLocation, eCapacity) {
+function insertEvents($eName, $eDate, $eLocation, $eCapacity) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO Event (Event_Name, Event_Date, Event_Location, Event_Capacity) VALUES (?, ?, ?, ?)");
