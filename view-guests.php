@@ -1,3 +1,8 @@
+<style>
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #D3D3D3;
+  }
+</style>
 <div class = "row">
   <div class = "col">
     <h1>Guests</h1>
@@ -11,13 +16,14 @@
 
 <h1>  </h1>
 <div class="table-responsive">
-  <table class="table">
+  <table class="table-striped">
     <thead>
       <tr> 
       <th>ID</th>   
       <th>Attendee ID</th>
       <th>Guest Name</th>
       <th>Relationship</th>
+      <th>Age</th>
         <th></th>
          <th></th>
         <th></th>
@@ -32,6 +38,7 @@ while ($guest = $guests -> fetch_assoc()) {
      <td><?php echo $guest['Attendee_ID']; ?></td>
      <td><?php echo $guest['Guest_Name']; ?></td>
      <td><?php echo $guest['Guest_Relationship']; ?></td>
+    <td><?php echo $guest['Guest_Age']; ?></td>
     <td>
       <form method = "post" action="">
             <input type="hidden" name="gID" value="<?php echo $guest['Guest_ID']; ?>">
