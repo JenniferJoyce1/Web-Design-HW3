@@ -32,11 +32,11 @@ function selectAttendeesByEvent($iid) {
 
 
 
-function updateEvents($eName, $eDate, $eLocation, $eID) {
+function updateEvents($eName, $eDate, $eLocation, $eCapacity, $eID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE Event SET Event_Name = ?, Event_Date = ?, Event_Location = ? WHERE Event_ID = ?");
-        $stmt->bind_param("sssi", $eName, $eDate, $eLocation, $eID);
+        $stmt = $conn->prepare("UPDATE Event SET Event_Name = ?, Event_Date = ?, Event_Location = ?, Event_Capacity = ? WHERE Event_ID = ?");
+        $stmt->bind_param("sssii", $eName, $eDate, $eLocation, $eCapacity, $eID);
         $success = $stmt->execute();
         $conn->close();
         return $success;
