@@ -1,6 +1,6 @@
 <style>
   .table-striped tbody tr:nth-child(odd) {
-    background-color: #A9A9A9;
+    background-color: #778899;
   }
 </style>
 <div class = "row">
@@ -34,7 +34,7 @@
 <?php
 while ($event = $events -> fetch_assoc()) {
 ?>
-  <tr> 
+  <tr class="table-striped"> 
      <td><?php echo $event['Event_ID']; ?></td>
      <td><?php echo $event['Event_Name']; ?></td>
      <td><?php echo $event['Event_Date']; ?></td>
