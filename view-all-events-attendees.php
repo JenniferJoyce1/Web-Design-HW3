@@ -27,7 +27,8 @@ while ($event = $events -> fetch_assoc()) {
 ?>
       </ul>
       </p>
-      <p class="card-text"><small class="text-body-secondary">Date: <td><?php echo $event['Event_Date']; ?> Location: <td><?php echo $event['Event_Location']; ?></small></p>
+      <p class="card-text"><small class="text-body-secondary">Date: <td><?php echo $event['Event_Date']; ?> Location: <td><?php echo $event['Event_Location']; ?> 
+      Planner: <td><?php echo $planner['Planner_Name']; ?></small></p>
     </div>
   </div>
 <?php      
