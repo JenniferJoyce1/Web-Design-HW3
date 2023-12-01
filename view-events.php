@@ -15,8 +15,8 @@
 </div>
 
 <h1>  </h1>
-<div class= "table"  "table-responsive">
-  <table class="table-striped">
+<div class= "table-responsive">
+  <table class="table table-striped">
     <thead>
       <tr> 
       <th>ID</th>   
