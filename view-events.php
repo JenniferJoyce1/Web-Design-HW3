@@ -16,7 +16,7 @@
 
 <h1>  </h1>
 <div class="table-responsive">
-  <table class="table">
+  <table class="table-striped">
     <thead>
       <tr> 
       <th>ID</th>   
@@ -34,7 +34,7 @@
 <?php
 while ($event = $events -> fetch_assoc()) {
 ?>
-  <tr class="table-striped"> 
+  <tr> 
      <td><?php echo $event['Event_ID']; ?></td>
      <td><?php echo $event['Event_Name']; ?></td>
      <td><?php echo $event['Event_Date']; ?></td>
