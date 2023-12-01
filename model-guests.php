@@ -17,8 +17,8 @@ function selectGuests() {
 function insertGuests($aID, $gName, $gRelationship) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO Guest (Attendee_ID, Guest_Name, Guest_Relationship) VALUES (?, ?, ?)");
-        $stmt->bind_param("iss", $aID, $gName, $gRelationship);
+        $stmt = $conn->prepare("INSERT INTO Guest (Attendee_ID, Guest_Name, Guest_Relationship, Guest_Age) VALUES (?, ?, ?)");
+        $stmt->bind_param("issi", $aID, $gName, $gRelationship, $gAge);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -29,11 +29,11 @@ function insertGuests($aID, $gName, $gRelationship) {
 }
 
 
-function updateGuests($aID, $gName, $gRelationship, $gID) {
+function updateGuests($aID, $gName, $gRelationship, $gAge, $gID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE Guest SET Attendee_ID = ?, Guest_Name = ?, Guest_Relationship = ? WHERE Guest_ID = ?");
-        $stmt->bind_param("issi", $aID, $gName, $gRelationship, $gID);
+        $stmt = $conn->prepare("UPDATE Guest SET Attendee_ID = ?, Guest_Name = ?, Guest_Relationship = ?, Guest_Age = ? WHERE Guest_ID = ?");
+        $stmt->bind_param("issii", $aID, $gName, $gRelationship, $gAge, $gID);
         $success = $stmt->execute();
         $conn->close();
         return $success;
