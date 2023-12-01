@@ -16,7 +16,7 @@
 
 <h1>  </h1>
 <div class="table-responsive">
-  <table class="table-striped">
+  <table class="table">
     <thead>
       <tr> 
       <th>ID</th>   
@@ -29,7 +29,7 @@
         <th></th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class= "table-striped">
 <?php
 while ($guest = $guests -> fetch_assoc()) {
 ?>
