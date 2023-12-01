@@ -1,6 +1,6 @@
 <style>
   .table-striped tbody tr:nth-child(odd) {
-    background-color: "gray"
+    background-color: "lightpink"
   }
 </style>
 <div class = "row">
