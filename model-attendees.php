@@ -17,8 +17,8 @@ function selectAttendees() {
 function insertAttendees($aFName, $aLName, $aEmail) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO Attendee (Attendee_FirstName, Attendee_LastName, Attendee_Email) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $aFName, $aLName, $aEmail);
+        $stmt = $conn->prepare("INSERT INTO Attendee (Attendee_FirstName, Attendee_LastName, Attendee_Email, Attendee_Phone) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $aFName, $aLName, $aEmail, $aPhone);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -29,11 +29,11 @@ function insertAttendees($aFName, $aLName, $aEmail) {
 }
 
 
-function updateAttendees($aFName, $aLName, $aEmail, $aID) {
+function updateAttendees($aFName, $aLName, $aEmail, $aPhone, $aID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE Attendee SET Attendee_FirstName = ?, Attendee_LastName = ?, Attendee_Email = ? WHERE Attendee_ID = ?");
-        $stmt->bind_param("sssi",$aFName, $aLName, $aEmail, $aID);
+        $stmt = $conn->prepare("UPDATE Attendee SET Attendee_FirstName = ?, Attendee_LastName = ?, Attendee_Email = ?, Attendee_Phone = ? WHERE Attendee_ID = ?");
+        $stmt->bind_param("ssssi",$aFName, $aLName, $aEmail, $aPhone, $aID);
         $success = $stmt->execute();
         $conn->close();
         return $success;
