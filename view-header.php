@@ -37,6 +37,9 @@
           <a style="color: PaleVioletRed;"  class="nav-link" href="guests.php">Guests</a>
          </li>
           <li class="nav-item">
+          <a style="color: PaleVioletRed;"  class="nav-link" href="planner.php">Planners</a>
+         </li>
+          <li class="nav-item">
           <a style="color: PaleVioletRed;" class="nav-link" href="all-events-attendees.php">All Events Info</a>
         </li>
       </ul>
