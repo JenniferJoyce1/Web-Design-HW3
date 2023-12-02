@@ -1,6 +1,6 @@
 <?php
 require_once("util.db.php");
-require_once("model-planner.php");
+require_once("model-planners.php");
 
 $pageTitle = "Planners";
 include "view-header.php";
