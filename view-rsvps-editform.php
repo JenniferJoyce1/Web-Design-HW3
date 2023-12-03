@@ -29,6 +29,14 @@
               <label for="rStatus<?php echo $rsvp['RSVP_ID']; ?>" class="form-label">RSVP Status (Yes or No)</label>
               <input type="text" class="form-control" id="rStatys<?php echo $rsvp['RSVP_ID']; ?>" name="rStatus" value="<?php echo $rsvp['RSVP_Status']; ?>">
             </div>
+            <div class="mb-3">
+              <label for="rGuest<?php echo $rsvp['RSVP_Guest']; ?>" class="form-label">Bringing a Guest?</label>
+              <input type="text" class="form-control" id="rStatys<?php echo $rsvp['RSVP_Guest']; ?>" name="rGuest" value="<?php echo $rsvp['RSVP_Guest']; ?>">
+            </div>
+            <div class="mb-3">
+              <label for="rDiet<?php echo $rsvp['RSVP_Diet']; ?>" class="form-label">Dietary Restrictions</label>
+              <input type="text" class="form-control" id="rStatys<?php echo $rsvp['RSVP_Diet']; ?>" name="rDiet" value="<?php echo $rsvp['RSVP_Diet']; ?>">
+            </div>
                      <input type= "hidden" name="rID" value="<?php echo $rsvp['RSVP_ID']; ?>">
                    <input type= "hidden" name="actionType" value="Edit">
             <button type="submit" class="btn btn-primary">Save RSVP</button>
