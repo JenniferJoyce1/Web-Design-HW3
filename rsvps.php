@@ -9,7 +9,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])){
   switch ($_POST['actionType']) {
     case "Add":
-      if (insertRSVPS($_POST['eID'], $_POST['aID'], $_POST['rStatus'])) {
+      if (insertRSVPS($_POST['eID'], $_POST['aID'], $_POST['rStatus'], $_POST['rGuest'], $_POST['rDiet'])) {
         echo '<div class="alert alert-success" role="alert" > Success! RSVP Added.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> Error.</div>';
@@ -23,7 +23,7 @@ if (isset($_POST['actionType'])){
       }
         break;
         case "Edit":
-      if (updateRSVPS($_POST['eID'], $_POST['aID'], $_POST['rStatus'], $_POST['rID'])) {
+      if (updateRSVPS($_POST['eID'], $_POST['aID'], $_POST['rStatus'], $_POST['rGuest'], $_POST['rDiet'] $_POST['rID'])) {
         echo '<div class="alert alert-success" role="alert" > Success! RSVP Edited.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> Error.</div>';
