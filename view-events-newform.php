@@ -28,6 +28,10 @@
               <label for="eLocation" class="form-label">Event Location</label>
               <input type="text" class="form-control" id="eLocation" name="eLocation">
             </div>
+              <div class="mb-3">
+              <label for="eCapacity" class="form-label">Event Capacity</label>
+              <input type="text" class="form-control" id="eCapacity" name="eCapacity">
+            </div>
                    <input type= "hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Submit Event</button>
         </form>
