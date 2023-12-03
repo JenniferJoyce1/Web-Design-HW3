@@ -25,8 +25,12 @@
               <input type="text" class="form-control" id="aLName<?php echo $attendee['Attendee_ID']; ?>" name="aLName" value="<?php echo $attendee['Attendee_LastName']; ?>">
             </div>
             <div class="mb-3">
-              <label for="aEmail<?php echo $attendee['Attendee_ID']; ?>" class="form-label">Attendee_Email</label>
+              <label for="aEmail<?php echo $attendee['Attendee_ID']; ?>" class="form-label">Attendee Email</label>
               <input type="text" class="form-control" id="aEmail<?php echo $attendee['Attendee_ID']; ?>" name="aEmail" value="<?php echo $attendee['Attendee_Email']; ?>">
+            </div>
+           <div class="mb-3">
+              <label for="aPhoen<?php echo $attendee['Attendee_ID']; ?>" class="form-label">Attendee Phone Number</label>
+              <input type="text" class="form-control" id="aPhone<?php echo $attendee['Attendee_ID']; ?>" name="aPhone" value="<?php echo $attendee['Attendee_Phone']; ?>">
             </div>
                      <input type= "hidden" name="aID" value="<?php echo $attendee['Attendee_ID']; ?>">
                    <input type= "hidden" name="actionType" value="Edit">
