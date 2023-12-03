@@ -14,11 +14,11 @@ function selectRSVPS() {
 }
 
 
-function insertRSVPS($eID, $aID, $rStatus) {
+function insertRSVPS($eID, $aID, $rStatus, $rGuest, $rDiet) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO RSVP (Event_ID, Attendee_ID, RSVP_Status) VALUES (?, ?, ?)");
-        $stmt->bind_param("iis", $eID, $aID, $rStatus);
+        $stmt = $conn->prepare("INSERT INTO RSVP (Event_ID, Attendee_ID, RSVP_Status, RSVP_Guest, RSVP_Diet) VALUES (?, ?, ?)");
+        $stmt->bind_param("iisss", $eID, $aID, $rStatus, $rGuest, $rDiet);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -29,11 +29,11 @@ function insertRSVPS($eID, $aID, $rStatus) {
 }
 
 
-function updateRSVPS($eID, $aID, $rStatus, $rID) {
+function updateRSVPS($eID, $aID, $rStatus, $rGuest, $rDiet, $rID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE RSVP SET Event_ID = ?, Attendee_ID = ?, RSVP_Status = ? WHERE RSVP_ID = ?");
-        $stmt->bind_param("iisi", $eID, $aID, $rStatus, $rID);
+        $stmt = $conn->prepare("UPDATE RSVP SET Event_ID = ?, Attendee_ID = ?, RSVP_Status = ?, RSVP_Guest = ?, RSVP_Diet = ? WHERE RSVP_ID = ?");
+        $stmt->bind_param("iisssi", $eID, $aID, $rStatus, $rGuest, $rDiet, $rID);
         $success = $stmt->execute();
         $conn->close();
         return $success;
