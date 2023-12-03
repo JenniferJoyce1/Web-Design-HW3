@@ -8,7 +8,8 @@ include "view-header.php";
         Whether it's an intimate birthday, a grand wedding, or a corporate affair, our dedicated team ensures a seamless and memorable experience. 
         From concept to execution, trust Perfectly Planned to handle the details while you focus on making cherished memories</p>
 
-  <p> Welcome to our database. This website all</p>
+  <p> Welcome to our database. This website includes all information about our perfectly planned events! Including a table of events, attendees, guests, RSVPs, and the assigned
+  planner! We also have an overview page to have a quick snapshot of the information</p>
 <?php
 include "view-footer.php";
 ?>
