@@ -28,6 +28,14 @@
               <label for="rStatus" class="form-label">RSVP Status (Yes or No) </label>
               <input type="text" class="form-control" id="rStatus" name="rStatus">
             </div>
+            <div class="mb-3">
+              <label for="rGuest" class="form-label">Bringing a Guest? (Yes or No) </label>
+              <input type="text" class="form-control" id="rGuest" name="rGuest">
+            </div>
+            <div class="mb-3">
+              <label for="rDiet" class="form-label">Dietary Restrictions </label>
+              <input type="text" class="form-control" id="rDiet" name="rDiet">
+            </div>
                    <input type= "hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Submit New RSVP</button>
         </form>
