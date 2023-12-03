@@ -23,6 +23,8 @@
       <th>Event ID</th>
       <th>Attendee ID</th>
       <th>Status</th>
+      <th>Bringing a Guest?</th>
+      <th>Dietary Restrictions</th>
         <th></th>
         <th></th>
         <th></th>
@@ -37,6 +39,8 @@ while ($rsvp = $rsvps -> fetch_assoc()) {
      <td><?php echo $rsvp['Event_ID']; ?></td>
      <td><?php echo $rsvp['Attendee_ID']; ?></td>
      <td><?php echo $rsvp['RSVP_Status']; ?></td>
+    <td><?php echo $rsvp['RSVP_Guest']; ?></td>
+    <td><?php echo $rsvp['RSVP_Diet']; ?></td>
      <td>
          <form method = "post" action="">
             <input type="hidden" name="rID" value="<?php echo $rsvp['RSVP_ID']; ?>">
