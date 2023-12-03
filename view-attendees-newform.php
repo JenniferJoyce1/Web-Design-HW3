@@ -28,6 +28,10 @@
               <label for="aEmail" class="form-label">Attendee Email</label>
               <input type="text" class="form-control" id="aEmail" name="aEmail">
             </div>
+              <div class="mb-3">
+              <label for="aPhone" class="form-label">Attendee Phone Number</label>
+              <input type="text" class="form-control" id="aPhone" name="aPhone">
+            </div>
                    <input type= "hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Submit New Attendee</button>
         </form>
