@@ -28,6 +28,10 @@
               <label for="eLocation<?php echo $event['Event_ID']; ?>" class="form-label">Event Location</label>
               <input type="text" class="form-control" id="eLocation<?php echo $event['Event_ID']; ?>" name="eLocation" value="<?php echo $event['Event_Location']; ?>">
             </div>
+            <div class="mb-3">
+              <label for="eCapacity<?php echo $event['Event_ID']; ?>" class="form-label">Event Capacity</label>
+              <input type="text" class="form-control" id="eCapacity<?php echo $event['Event_ID']; ?>" name="eCapacity" value="<?php echo $event['Event_Capacity']; ?>">
+            </div>
                      <input type= "hidden" name="eID" value="<?php echo $event['Event_ID']; ?>">
                    <input type= "hidden" name="actionType" value="Edit">
             <button type="submit" class="btn btn-primary">Save Event</button>
