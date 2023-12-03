@@ -1,3 +1,8 @@
+<style>
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #d3d3d3;
+  }
+</style>
 <div class = "row">
   <div class = "col">
     <h1>RSVPs</h1>
@@ -11,7 +16,7 @@
 
 <h1>  </h1>
 <div class="table-responsive">
-  <table class="table">
+  <table class="table table-striped">
     <thead>
       <tr> 
       <th>RSVP ID</th>   
