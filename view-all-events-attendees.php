@@ -21,7 +21,7 @@ while ($event = $events -> fetch_assoc()) {
   $attendees = selectAttendeesByEvent($event['Event_ID']);
   while ($attendee = $attendees->fetch_assoc()) {
 ?>
-     <li class="list-group-item"><?php echo $attendee['Attendee_FirstName']; ?> <?php echo $attendee['Attendee_LastName']; ?> - <?php echo $attendee['RSVP_Status']; ?></li>
+     <li class="list-group-item"><?php echo $attendee['Attendee_FirstName']; ?> <?php echo $attendee['Attendee_LastName']; ?> - <?php echo $attendee['RSVP_Guest']; ?></li>
 <?php    
     }
 ?>
