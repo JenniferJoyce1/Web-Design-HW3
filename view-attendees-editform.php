@@ -33,7 +33,7 @@
               <input type="text" class="form-control" id="aPhone<?php echo $attendee['Attendee_ID']; ?>" name="aPhone" value="<?php echo $attendee['Attendee_Phone']; ?>">
             </div>
            <div class="mb-3">
-              <label for="aPerfer<?php echo $attendee['Attendee_ID']; ?>" class="form-label">Perferred Method of Contact</label>
+              <label for="aPerfer<?php echo $attendee['Attendee_ID']; ?>" class="form-label">Perferred Method of Contact (Text, Call, Or Email)</label>
               <input type="text" class="form-control" id="aPerfer<?php echo $attendee['Attendee_ID']; ?>" name="aPerfer" value="<?php echo $attendee['Attendee_Perferred']; ?>">
             </div>
           <div class="mb-3">
