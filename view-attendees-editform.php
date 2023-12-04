@@ -29,8 +29,16 @@
               <input type="text" class="form-control" id="aEmail<?php echo $attendee['Attendee_ID']; ?>" name="aEmail" value="<?php echo $attendee['Attendee_Email']; ?>">
             </div>
            <div class="mb-3">
-              <label for="aPhoen<?php echo $attendee['Attendee_ID']; ?>" class="form-label">Attendee Phone Number</label>
+              <label for="aPhone<?php echo $attendee['Attendee_ID']; ?>" class="form-label">Attendee Phone Number (###-###-####)</label>
               <input type="text" class="form-control" id="aPhone<?php echo $attendee['Attendee_ID']; ?>" name="aPhone" value="<?php echo $attendee['Attendee_Phone']; ?>">
+            </div>
+           <div class="mb-3">
+              <label for="aPerfer<?php echo $attendee['Attendee_ID']; ?>" class="form-label">Perferred Method of Contact</label>
+              <input type="text" class="form-control" id="aPerfer<?php echo $attendee['Attendee_ID']; ?>" name="aPerfer" value="<?php echo $attendee['Attendee_Perferred']; ?>">
+            </div>
+          <div class="mb-3">
+              <label for="aEmergency<?php echo $attendee['Attendee_ID']; ?>" class="form-label">Emergency Phone Number (###-###-####)</label>
+              <input type="text" class="form-control" id="aEmergency<?php echo $attendee['Attendee_ID']; ?>" name="aEmergency" value="<?php echo $attendee['Attendee_Emergency']; ?>">
             </div>
                      <input type= "hidden" name="aID" value="<?php echo $attendee['Attendee_ID']; ?>">
                    <input type= "hidden" name="actionType" value="Edit">
