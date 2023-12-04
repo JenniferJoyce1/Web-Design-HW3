@@ -17,7 +17,7 @@ function selectRSVPS() {
 function insertRSVPS($eID, $aID, $rStatus, $rGuest, $rDiet) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO RSVP (Event_ID, Attendee_ID, RSVP_Status, RSVP_Guest, RSVP_Diet) VALUES (?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO RSVP (Event_ID, Attendee_ID, RSVP_Status, RSVP_Guest, RSVP_Diet) VALUES (?, ?, ?, ?, ?)");
         $stmt->bind_param("iisss", $eID, $aID, $rStatus, $rGuest, $rDiet);
         $success = $stmt->execute();
         $conn->close();
