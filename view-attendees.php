@@ -26,6 +26,8 @@
       <th>Last Name</th>
       <th>Email</th>
       <th>Phone</th>
+      <th>Perferred Method of Contact</th>
+      <th>Emergency Contact</th>
       <th>Post Button</th>
       <th></th>
       <th></th>
@@ -42,6 +44,8 @@ while ($attendee = $attendees -> fetch_assoc()) {
      <td><?php echo $attendee['Attendee_LastName']; ?></td>
      <td><?php echo $attendee['Attendee_Email']; ?></td>
      <td><?php echo $attendee['Attendee_Phone']; ?></td>
+     <td><?php echo $attendee['Attendee_Perferred']; ?></td>
+     <td><?php echo $attendee['Attendee_Emergency']; ?></td>
      <td>
        <form method = "post" action="guests-per-attendee.php">
          <input type="hidden" name="pid" value="<?php echo $attendee['Attendee_ID']; ?>">
