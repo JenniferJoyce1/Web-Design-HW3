@@ -21,7 +21,7 @@ while ($event = $events -> fetch_assoc()) {
   $attendees = selectAttendeesByEvent($event['Event_ID']);
   while ($attendee = $attendees->fetch_assoc()) {
 ?>
-     <li class="list-group-item"><?php echo $attendee['Attendee_FirstName']; ?> <?php echo $attendee['Attendee_LastName']; ?> - <?php echo $attendee['RSVP_Guest']; ?></li>
+     <li class="list-group-item"><?php echo $attendee['Attendee_FirstName']; ?> <?php echo $attendee['Attendee_LastName']; ?> - <?php echo $attendee['RSVP_Status']; ?></li>
 <?php    
     }
 ?>
@@ -29,7 +29,7 @@ while ($event = $events -> fetch_assoc()) {
       </p>
       <p class="card-text"><small class="text-body-secondary">Date: <td><?php echo $event['Event_Date']; ?> </small></p>
       <p class="card-text"><small class="text-body-secondary">Location: <td><?php echo $event['Event_Location']; ?> </small></p>
-      <p class="card-text"><small class="text-body-secondary">Planner Name: <td><?php echo $planner['Planner_Name']; ?> </small></p>
+   <!----   <p class="card-text"><small class="text-body-secondary">Planner Name: <td><?php echo $planner['Planner_Name']; ?> </small></p>  -->
     </div>
   </div>
 <?php      
