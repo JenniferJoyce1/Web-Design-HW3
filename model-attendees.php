@@ -18,7 +18,7 @@ function insertAttendees($aFName, $aLName, $aEmail, $aPhone, $aPerfer, $aEmergen
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO Attendee (Attendee_FirstName, Attendee_LastName, Attendee_Email, Attendee_Phone, Attendee_Perferred, Attendee_Emergency) 
-        VALUES (?, ?, ?, ?)");
+        VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssss", $aFName, $aLName, $aEmail, $aPhone, $aPerfer, $aEmergency);
         $success = $stmt->execute();
         $conn->close();
