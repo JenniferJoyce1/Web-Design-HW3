@@ -28,6 +28,10 @@
               <label for="gRelationship<?php echo$guest['Guest_ID']; ?>" class="form-label">Guest Relationship to Attendee</label>
               <input type="text" class="form-control" id="gRelationship<?php echo $guest['Guest_ID']; ?>" name="gRelationship" value="<?php echo $guest['Guest_Relationship']; ?>">
             </div>
+        <div class="mb-3">
+              <label for="gRelationship<?php echo$guest['Guest_ID']; ?>" class="form-label">Guest Age</label>
+              <input type="text" class="form-control" id="gAge<?php echo $guest['Guest_ID']; ?>" name="gAge" value="<?php echo $guest['Guest_Age']; ?>">
+            </div>
                      <input type= "hidden" name="gID" value="<?php echo $guest['Guest_ID']; ?>">
                    <input type= "hidden" name="actionType" value="Edit">
             <button type="submit" class="btn btn-primary">Save Guest Info</button>
