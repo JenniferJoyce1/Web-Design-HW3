@@ -43,7 +43,7 @@ function updatePlanners($eID, $pName, $pNumber, $pEmail, $pSpeciality, $pID) {
     }
 }
 
-function deletePlanners($aID) {
+function deletePlanners($pID) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("DELETE FROM Planner WHERE Planner_ID = ? ");
