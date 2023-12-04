@@ -30,6 +30,10 @@
               <label for="gRelationship" class="form-label">Guest Relationship</label>
               <input type="text" class="form-control" id="gRelationship" name="gRelationship" value="">
             </div>
+        <div class="mb-3">
+              <label for="gAge" class="form-label">Guest Age</label>
+              <input type="text" class="form-control" id="gAge" name="gAge" value="">
+            </div>
 
                    <input type= "hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Add Guest</button>
