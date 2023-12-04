@@ -28,9 +28,17 @@
               <label for="aEmail" class="form-label">Attendee Email</label>
               <input type="text" class="form-control" id="aEmail" name="aEmail">
             </div>
-              <div class="mb-3">
-              <label for="aPhone" class="form-label">Attendee Phone Number</label>
+            <div class="mb-3">
+              <label for="aPhone" class="form-label">Attendee Phone Number (###-###-####)</label>
               <input type="text" class="form-control" id="aPhone" name="aPhone">
+            </div>
+            <div class="mb-3">
+              <label for="aPerfer" class="form-label">Attendee Perferred Contact Method (Text, Call, Or Email)</label>
+              <input type="text" class="form-control" id="aPerfer" name="aPerfer">
+            </div>
+            <div class="mb-3">
+              <label for="aEmergency" class="form-label">Attendee Emergency Contact (###-###-####)</label>
+              <input type="text" class="form-control" id="aEmergency" name="aEmergency">
             </div>
                    <input type= "hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Submit New Attendee</button>
