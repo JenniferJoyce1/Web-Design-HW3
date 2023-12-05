@@ -5,7 +5,7 @@
 </style>
 <div class = "row">
   <div class = "col">
-    <h1>Planners</h1>
+  <h1 style= "color:RoyalBlue;"><b>Planners</b></h1>
   </div>
   <div class = "col-auto">
 <?php
